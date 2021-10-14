@@ -25,7 +25,7 @@ experience:
   - title: Data Scientist / Owner
     company: Walras
     company_url: ''
-    company_logo: org-gc
+    company_logo: walras_w.svg
     location: Curitiba, Brazil
     date_start: '2019-07-01'
     date_end: ''
@@ -52,7 +52,7 @@ experience:
   - title: Economist
     company: Invest Paraná
     company_url: ''
-    company_logo: org-x
+    company_logo: normal_INVEST_PR_MARCA.svg
     location: Brazil
     date_start: '2019-04-01'
     date_end: '2020-07-01'
