@@ -52,7 +52,7 @@ experience:
  - title: Economist
     company: Invest Paraná
     company_url: 
-    company_logo: org-y
+    company_logo: org-x
     location: Brazil
     date_start: '2019-04-01'
     date_end: '2020-07-01'
