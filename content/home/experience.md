@@ -49,19 +49,7 @@ experience:
         * Machine Learning forecasting models for macroeconomic variables
         * Programming (R and Python), statistics and econometrics classes.
 
- - title: Economist
-    company: Invest Paraná
-    company_url: 
-    company_logo: org-x
-    location: Brazil
-    date_start: '2019-04-01'
-    date_end: '2020-07-01'
-    description: |2-
-        Description: 
-        
-        * Responsible for running an economic development program with several municipalities in the state of Paraná (PMAI).
-        * Creation and maintenance of an automated report generator with economic and demographic statistics of the municipalities.
-        * Statistical and econometric analysis of economic data.
+
 
 
 design:
