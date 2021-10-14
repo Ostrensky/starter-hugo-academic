@@ -38,7 +38,7 @@ experience:
         
   - title: Data Scientist
     company: Análise Macro
-    company_url: 'analisemacro.com.br'
+    company_url: 'https://analisemacro.com.br/author/vitor-ostrensky/'
     company_logo: AM
     location: Brazil
     date_start: '2021-05-01'
