@@ -22,28 +22,47 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: CEO
-    company: GenCoin
+  - title: Data Scientist / Owner
+    company: Walras
     company_url: ''
     company_logo: org-gc
-    location: California
-    date_start: '2021-01-01'
+    location: Curitiba, Brazil
+    date_start: '2019-07-01'
     date_end: ''
     description: |2-
-        Responsibilities include:
+        Main projects:
         
-        * Analysing
-        * Modelling
-        * Deploying
+        * Built a machine learning model to predict currency crisis in developing countries.
+        * Built a Dynamic ESG Index Builder.
+        * Construction of a Nowcasting Model, based on NYFED model, for brazilian GDP (in beta version).
         
-  - title: Professor of Semiconductor Physics
-    company: University X
-    company_url: ''
+  - title: Data Scientist
+    company: Análise Macro
+    company_url: 'analisemacro.com.br'
     company_logo: org-x
-    location: California
-    date_start: '2016-01-01'
-    date_end: '2020-12-31'
-    description: Taught electronic engineering and researched semiconductor physics.
+    location: Brazil
+    date_start: '2021-05-01'
+    date_end: '2021-08-01'
+    description: |2-
+        Description: 
+        
+        * Machine Learning forecasting models for macroeconomic variables
+        * Programming (R and Python), statistics and econometrics classes.
+
+ - title: Economist
+    company: Invest Paraná
+    company_url: 
+    company_logo: org-y
+    location: Brazil
+    date_start: '2019-04-01'
+    date_end: '2020-07-01'
+    description: |2-
+        Description: 
+        
+        * Responsible for running an economic development program with several municipalities in the state of Paraná (PMAI).
+        * Creation and maintenance of an automated report generator with economic and demographic statistics of the municipalities.
+        * Statistical and econometric analysis of economic data.
+
 
 design:
   columns: '2'
