@@ -39,7 +39,7 @@ experience:
   - title: Data Scientist
     company: Análise Macro
     company_url: 'analisemacro.com.br'
-    company_logo: org-x
+    company_logo: AM
     location: Brazil
     date_start: '2021-05-01'
     date_end: '2021-08-01'
