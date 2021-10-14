@@ -49,7 +49,7 @@ experience:
         * Machine Learning forecasting models for macroeconomic variables
         * Programming (R and Python), statistics and econometrics classes.
 
- - title: Economist
+  - title: Economist
     company: Invest Paraná
     company_url: ''
     company_logo: org-x
