@@ -14,7 +14,7 @@ organizations:
   url: ''
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests include Time series forecasting, Machine Learning and Public Policy.
 
 # Interests to show in About widget
 interests:
@@ -28,7 +28,7 @@ education:
   - course: PhD in Economics
     institution: Universidade Federal do Paraná
     year: 2024
-  - course: MEng in Economics
+  - course: MSc in Economics
     institution: Universidade Federal do Paraná
     year: 2018
   - course: BSc in Economics
