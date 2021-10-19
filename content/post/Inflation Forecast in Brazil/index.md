@@ -1,5 +1,5 @@
 ---
-title: Forecasting inflation in Brazil
+title: Previsão da inflação mensal (IPCA)
 subtitle: ""
 
 # Summary for listings and search engines
