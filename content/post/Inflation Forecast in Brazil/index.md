@@ -243,9 +243,6 @@ Há dois motivos muito importantes para utilizarmos os dados do Focus. O primeir
                 values_from = median, names_prefix = "median_h_")
 ```
 
-```
-## Error in curl::curl_fetch_memory(url, handle = handle): Operation was aborted by an application callback
-```
 
 ## Juntando as variáveis
 
@@ -262,9 +259,6 @@ data = list(IPCA, economic_activity, IGPM, interestrate, civil_price, seguro,
 data <- full_join(data, focus)
 ```
 
-```
-## Error: `x` and `y` must share the same src, set `copy` = TRUE (may be slow).
-```
 
 # Transformando as variáveis 
 
@@ -314,10 +308,6 @@ variables <- data[-c(1:2)] %>%
   names()
 ```
 
-```
-## Error: Can't subset columns that don't exist.
-## x Column `median_h_1` doesn't exist.
-```
 
 ```r
 data <- data  %>%
@@ -337,17 +327,6 @@ data <- data  %>%
   as_tsibble() %>%
   filter_index("2004 nov" ~ .) %>%
   relocate(date) 
-```
-
-```
-## Note: Using an external vector in selections is ambiguous.
-## i Use `all_of(variables)` instead of `variables` to silence this message.
-## i See <https://tidyselect.r-lib.org/reference/faq-external-vector.html>.
-## This message is displayed once per session.
-```
-
-```
-## Using `date` as index variable.
 ```
 
 ## Dividindo a base
@@ -472,9 +451,6 @@ for(i in 1:12){
 }
 ```
 
-```
-## Error in accuracy.default(pred_focus[[i]], lead_y): First argument should be a forecast object or a time series.
-```
 
 ```r
 rmse_fore <- data.frame(cbind(unlist(map(acc_focus, 2)), unlist(map(acc_rw, 2)), unlist(map(acc_csr, 2)),
@@ -486,33 +462,14 @@ mae_fore <- data.frame(cbind(unlist(map(acc_focus, 3)), unlist(map(acc_rw, 3)), 
 names(rmse_fore) <- c("focus", "rw", "csr", "lasso", "bagging", "ensemble")
 ```
 
-```
-## Error in names(rmse_fore) <- c("focus", "rw", "csr", "lasso", "bagging", : atributo 'names' [6] deve ter o mesmo comprimento que o vetor [5]
-```
-
-```r
-names(mae_fore) <- c("focus", "rw", "csr", "lasso", "bagging", "ensemble")
-```
-
-```
-## Error in names(mae_fore) <- c("focus", "rw", "csr", "lasso", "bagging", : atributo 'names' [6] deve ter o mesmo comprimento que o vetor [5]
-```
-
 ```r
 rmse_fore$h <- seq(1:12)
-```
-
-```
-## Error in `$<-.data.frame`(`*tmp*`, h, value = 1:12): replacement has 12 rows, data has 1
 ```
 
 ```r
 mae_fore$h <- seq(1:12)
 ```
 
-```
-## Error in `$<-.data.frame`(`*tmp*`, h, value = 1:12): replacement has 12 rows, data has 1
-```
 
 ```r
 forecast_12months <- data.frame(cbind(unlist(lapply(pred_csr, tail, 1)),
@@ -524,17 +481,11 @@ forecast_12months <- data.frame(cbind(unlist(lapply(pred_csr, tail, 1)),
 names(forecast_12months) <- c("csr", "lasso", "bagging", "ensemble", "focus")
 ```
 
-```
-## Error in names(forecast_12months) <- c("csr", "lasso", "bagging", "ensemble", : atributo 'names' [5] deve ter o mesmo comprimento que o vetor [4]
-```
-
 ```r
 forecast_12months$h <- seq(1:12)
 ```
 
-```
-## Error in `$<-.data.frame`(`*tmp*`, h, value = 1:12): replacement has 12 rows, data has 1
-```
+
 
 ```r
 pred_test <- list(pred_focus, pred_ensemble, y_test)
@@ -559,36 +510,22 @@ pred_test <- list_acc_pred[[4]]
 rmse$h <- seq(1:12)
 ```
 
-```
-## Error in `$<-.data.frame`(`*tmp*`, h, value = 1:12): replacement has 12 rows, data has 1
-```
 
 ```r
 mae$h <- seq(1:12)
 ```
 
-```
-## Error in `$<-.data.frame`(`*tmp*`, h, value = 1:12): replacement has 12 rows, data has 1
-```
 
 ```r
 pred$h <- as.Date(append_row(forecast_row,11)$date)
 ```
 
-```
-## Error in `$<-.data.frame`(`*tmp*`, h, value = structure(c(18871, 18901, : replacement has 12 rows, data has 1
-```
 
 ```r
 rmse$metric <- "RMSE"
 mae$metric <- "MAE"
 
 error_metric <- rbind(rmse, mae) %>% select(rw, ensemble, focus, h, metric)
-```
-
-```
-## Error: Can't subset columns that don't exist.
-## x Column `rw` doesn't exist.
 ```
 
 ```r
@@ -604,10 +541,6 @@ error_metric %>%
     facet_wrap(~ metric)
 ```
 
-```
-## Error: Can't subset columns that don't exist.
-## x Column `h` doesn't exist.
-```
 
 
 # Exportando os dados para o shiny
@@ -617,25 +550,16 @@ error_metric %>%
 write.csv(error_metric, "Inflation_app/error_metric.csv")
 ```
 
-```
-## Error in file(file, ifelse(append, "a", "w")): não é possível abrir a conexão
-```
+
 
 ```r
 write.csv(pred, "Inflation_app/pred.csv")
-```
-
-```
-## Error in file(file, ifelse(append, "a", "w")): não é possível abrir a conexão
 ```
 
 ```r
 save(pred_test, file="Inflation_app/pred_test.RData")
 ```
 
-```
-## Error in gzfile(file, "wb"): não é possível abrir a conexão
-```
 
 ```r
 test_date <- test$date
@@ -643,9 +567,6 @@ test_date <- test$date
 save(test_date, file="Inflation_app/test_date.RData")
 ```
 
-```
-## Error in gzfile(file, "wb"): não é possível abrir a conexão
-```
 
 # Apêndice
 
@@ -654,9 +575,6 @@ save(test_date, file="Inflation_app/test_date.RData")
 apend <- read.csv2("variaveis.csv")
 ```
 
-```
-## Error in file(file, "rt"): não é possível abrir a conexão
-```
 
 ```r
 apend$X <- NULL
@@ -693,3 +611,23 @@ kable(apend)
 
 
 # Referências
+
+Adhikari, R., & Agrawal, R. K. (2013). An introductory study on time series modeling and forecasting. arXiv preprint arXiv:1302. 6613.
+
+Baybuza, I. (2018). Inflation forecasting using machine learning methods. Russian Journal of Money and Finance, 77(4), 42–59.
+
+Choi, H., & Varian, H. (2012). Predicting the present with Google Trends. Economic record, 88, 2–9.
+
+Elliott, G., Gargano, A., & Timmermann, A. (2013). Complete subset regressions. Journal of Econometrics, 177(2), 357–373.
+
+Garcia, M. G. P., Medeiros, M. C., & Vasconcelos, G. F. R. (2017). Real-time inflation forecasting with high-dimensional models: The case of Brazil. International Journal of Forecasting, 33(3), 679–693.
+
+Mandalinci, Z. (2017). Forecasting inflation in emerging markets: An evaluation of alternative models. International Journal of forecasting, 33(4), 1082–1104.
+
+Medeiros, M. C., Vasconcelos, G. F. R., Veiga, Á., & Zilberman, E. (2021). Forecasting inflation in a data-rich environment: the benefits of machine learning methods. Journal of Business & Economic Statistics, 39(1), 98–119.
+
+Naccarato, A., Falorsi, S., Loriga, S., & Pierini, A. (2018). Combining official and Google Trends data to forecast the Italian youth unemployment rate. Technological Forecasting and Social Change, 130, 114–122.
+
+Zou, H., Hastie, T., Tibshirani, R., & Others. (2007). On the “degrees of freedom” of the lasso. The Annals of Statistics, 35(5), 2173–2192.
+
+
