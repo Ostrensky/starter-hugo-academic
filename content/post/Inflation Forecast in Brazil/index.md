@@ -1,5 +1,5 @@
 ---
-title: Forecasting inflation in Brazil
+title: Previsão da inflação mensal (IPCA)
 subtitle: ""
 
 # Summary for listings and search engines
@@ -43,7 +43,7 @@ bibliography: 'ref.bib'
 
 # Introdução
 
-Este documento demonstra o passo-a-passo do modelo de previsão do IPCA.
+Este documento demonstra o passo-a-passo do modelo de previsão do IPCA. As previsões estão disponíveis nu App Shiny em: https://ostrensky.shinyapps.io/Inflation_app/
 
 
 
