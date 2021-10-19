@@ -321,7 +321,7 @@ data <- data  %>%
          income_tax_revenue = lag(income_tax_revenue),
          sales_commerce = lag(sales_commerce),
          public_debt = lag(public_debt),
-         energy_consumption = lag(energy_consumption)) %>%
+         energy_consumption = lag(energy_consumption,2)) %>%
   tk_augment_lags(-one_of("date"), .lags = 1:nlags) %>%
   select(!variables) %>%
   as_tsibble() %>%
