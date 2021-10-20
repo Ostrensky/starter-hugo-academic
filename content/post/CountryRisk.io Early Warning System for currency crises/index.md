@@ -103,6 +103,9 @@ The charts below show the individual trading strategies for Brazil and Mexico.
 ## Outlook
 As we have seen, advances in machine learning have given us new tools to model currency crises that can produce useful early warning signals. Given the positive results of our EWS, we will integrate it into a future update of the CountryRisk.io Insights Platform to help our users make better country risk decisions. Over time, we aim to include more countries in the EWS and improve it by adding other relevant indicators and applying new methodologies as the academic literature evolves.
 For additional model results and methodology, and if you want to learn more about CountryRisk.io and our analytics, please email contact@countryrisk.io. We’d love to hear from you.
+
 This article and the presented model was developed jointly by Bernhard Obenhuber, Vitor Pestana and Leonardo Frota.
+
 Vitor has experience in the public sector, where he worked in regional development and international investment attraction. He has a master’s degree in Economics from the Federal University of Paraná and is currently a PhD candidate at the same institution.
+
 Leonardo is a Professor of Finance and Economics at the Catholic University of Paraná. He is currently a PhD candidate in Development Economics at the Federal University of Paraná. His current research projects focus on the intersection of Machine Learning and Applied Economics. Leonardo has also implemented projects in the area of credit risk modelling for the private sector.
