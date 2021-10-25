@@ -54,7 +54,7 @@ The E minor is the most frequent key on Iron Maiden tracks, but something is str
 Several songs that the database identifies as being a major key are, in fact, minor, such as Wrathchild, El Dorado and Hallowed be thy name. That shows us what the tone detection algorithm does not work perfectly. Here comes a lesson: you often have to be wary of the data.
 The data also brings a variable that measures, from 0 to 100, the popularity of the songs. The chart below shows the popularity of each one, according to the year the album was released.
 
-<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~Vitorpestana/5.embed"></iframe>
+<iframe width="700" height="600" frameborder="0" scrolling="no" src="//plotly.com/~Vitorpestana/5.embed"></iframe>
 
 Immediately we can notice the discrepancy of the album The Final Frontier, from 2010, with the rest of the discography. It’s not the most loved album of the fans, but would it be less popular than both of Blaze’s era albums? That seems somehow wrong. Maybe it was stuffy by the release of The Book of Souls, the first album recorded in the times of Spotify. On the other side, Iron Maiden’s most heard songs are not surprising, in order: The Trooper, Run to the Hills, and Fear of the Dark.
 Continuing an analysis, we will use the valence and energy measures. Spotify defines valence:
@@ -67,7 +67,7 @@ And energy:
 
 By taking these variables on a timeline, we can observe a curious pattern throughout the band’s albums. Energy is represented by the color of each observation.
 
-<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~Vitorpestana/7.embed"></iframe>
+<iframe width="700" height="600" frameborder="0" scrolling="no" src="//plotly.com/~Vitorpestana/7.embed"></iframe>
 
 There is a sonority before the departure of Bruce Dickinson in 1994, and one after. The difference in the two variables is quite significant. Not surprisingly, the album X-Factor is the album with the lower average in both indicators, since it is a disc very influenced by the bad moment that Steve Harris, leader of the band, was passing in his personal life. To get an idea, of the five songs with less “energy” of the band, four are from this album. Below, the table shows the five songs with more and less valence and energy, respectively.
 
